@@ -20,11 +20,14 @@ filetype on
 filetype plugin on
 filetype indent on
 " PLUGINS ---------------------------------------------------------------- {{{
-call plug#begin('~/.vim/plugged'
+call plug#begin('~/.vim/plugged')
     Plug 'dense-analysis/ale'
     Plug 'preservim/nerdtree'
     Plug 'ervandew/supertab'
     Plug 'crusoexia/vim-monokai'
+    Plug 'mhinz/vim-startify'
+    Plug 'ryanoasis/vim-devicons'
+    
 call plug#end()
 
 " }}}
@@ -33,3 +36,4 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 set completeopt=menu,menuone,preview,noselect,noinsert
 let g:ale_completion_enabled = 1
 colorscheme monokai
+set omnifunc=syntacomplete#Complete
