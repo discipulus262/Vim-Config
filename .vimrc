@@ -42,5 +42,15 @@ nnoremap <leader>d :G push<CR>
 nnoremap <leader>z :G pull<CR>
 let g:ale_completion_enabled = 1
 colorscheme monokai
+let g:lightline = {
+      \ 'colorscheme': 'one',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
+      \ }
 set laststatus=2
 set noshowmode
