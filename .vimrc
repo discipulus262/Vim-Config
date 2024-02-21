@@ -42,3 +42,4 @@ nnoremap <leader>z :G pull<CR>
 let g:ale_completion_enabled = 1
 colorscheme monokai
 set laststatus=2
+set noshowmode
