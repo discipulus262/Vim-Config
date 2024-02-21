@@ -31,6 +31,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf.vim'
     Plug 'tpope/vim-fugitive'
     Plug 'itchyny/lightline.vim'
+    Plug 'jiangmiao/auto-pairs'
 call plug#end()
 nnoremap <leader>g :NERDTreeFocus<CR>
 set completeopt=menu,menuone,preview,noselect,noinsert
